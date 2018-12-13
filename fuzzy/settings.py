@@ -89,11 +89,11 @@ WSGI_APPLICATION = 'fuzzy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'msd_catalog',
-        'USER': 'msd_catalog',
-        'HOST': 'localhost',
+        'NAME': 'fuzzy',
+        'USER': 'fuzzy',
+        'HOST': 'db',
         'PORT': '5432',
-        # 'PASSWORD':
+        'PASSWORD':'fuzzy'
     }
 }
 
