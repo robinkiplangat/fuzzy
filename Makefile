@@ -4,11 +4,11 @@ build:
 	$(COMPOSE) build
 
 web:
-	$(COMPOSE) up web
+	$(COMPOSE) up web migration
 
 enter:
 	$(COMPOSE) exec web bash
-	
-migrate:
-	$(COMPOSE) exec web python manage.py makemigrations
-	$(COMPOSE) exec web python manage.py migrate
+
+migration:
+	$(COMPOSE) run web python manage.py makemigrations
+	$(COMPOSE) run web python manage.py migrate

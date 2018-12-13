@@ -12,7 +12,8 @@ services:
 
   web:
     build: .
-    command: "python manage.py runserver"
+    command: "python manage.py runserver 0.0.0.0:8000"
+
     environment:
       - ENVIRONMENT=local
     env_file:
@@ -26,6 +27,15 @@ services:
       - elastic
     links:
       - db
+
+  migration:
+    image: postgres
+    command: "python manage.py migrate"
+    volumes:
+      - .:/fuzzy
+    depends_on:
+      - db
+
   elastic:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.5.3
     ports:
