@@ -1,0 +1,36 @@
+{% block content %}
+
+{% block body_block %}
+
+<div class="page-header">
+    <h1>Search Products Catalogue</h1>
+</div>
+
+<div class="row">
+
+    <form class="search" method="get">
+
+        <input id="q" name="q" type="text" placeholder="your search...">
+
+    </form>
+
+    {% for item in products %}
+
+
+    <p>Product Code     : {{ item.code }})</p>
+    <p>Product  Type    : {{ item.type }}</p>
+    <p>Product Category : {{ item.category }}</p>
+    <p>Product Name     : {{ item.description }}</p>
+    <p>Product VEN     : {{ item.ven }}</p>
+    <p>Product HFR     : {{ item.hfr }}</p>
+    <p>Product UOM      : {{ item.uom }}</p>
+    <p>Product Price    : TZ Shs. {{ item.price }}</p>
+
+
+
+
+    {% endfor %}
+
+</div>
+{% endblock %}
+{% endblock %}
