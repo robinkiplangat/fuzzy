@@ -1,6 +1,6 @@
 # fuzzy
 
-creating DjangoRest API with Elasticsearch
+A dockerized DjangoRest API app with Elasticsearch
 
 ### Getting set-up
 
