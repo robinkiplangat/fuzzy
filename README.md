@@ -1,6 +1,6 @@
 # fuzzy
 
-A dockerized DjangoRest API app with Elasticsearch
+A dockerized [DjangoRest API](1) app with [Elasticsearch](2)
 
 ### Getting set-up
 
@@ -48,3 +48,6 @@ When you’re done, don’t forget to close down your Docker container.
 $ docker-compose down
 
 ```
+
+[1]: https://www.django-rest-framework.org/
+[2]: https://www.elastic.co/products/elasticsearch
