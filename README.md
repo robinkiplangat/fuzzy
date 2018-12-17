@@ -38,7 +38,7 @@ TODO
 # $ psql fuzzy -U fuzzy -c "\COPY catalog_product(type,category,code,VEN,HFR,description,uom,price) FROM 'data/catalog_data.csv' DELIMITER ',' CSV HEADER"
 
 ```
-To search for a products with description eg _dental_ :
+To search for a products using a term eg *_dental_* :
 
 go to http://0.0.0.0:8000/products_search/?q=dental
 
